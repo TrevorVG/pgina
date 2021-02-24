@@ -1,0 +1,40 @@
+﻿Build started 22 Feb 2021 14:49:55.
+     1>Project "D:\ss\pgina\Plugins\Kerberos\authdll\authdll.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /Od /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D AUTHDLL_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"D:\ss\pgina\Plugins\Kerberos\authdll\Debug\x64\\" /Fd"D:\ss\pgina\Plugins\Kerberos\authdll\Debug\x64\vc100.pdb" /Gd /TP /errorReport:prompt authfuncs.cpp
+         authfuncs.cpp
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"D:\ss\pgina\Plugins\Kerberos\authdll\Debug\x64\authdll.dll.embed.manifest.res" D:\ss\pgina\Plugins\Kerberos\authdll\Debug\x64\authdll_manifest.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\ss\pgina\Plugins\Kerberos\authdll\Debug\x64\authdll.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib secur32.lib /MANIFEST /ManifestFile:"D:\ss\pgina\Plugins\Kerberos\authdll\Debug\x64\authdll.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\ss\pgina\Plugins\Kerberos\authdll\Debug\x64\authdll.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\ss\pgina\Plugins\Kerberos\authdll\Debug\x64\authdll.lib" /MACHINE:X64 /DLL D:\ss\pgina\Plugins\Kerberos\authdll\Debug\x64\authdll.dll.embed.manifest.res
+         D:\ss\pgina\Plugins\Kerberos\authdll\Debug\x64\authfuncs.obj
+            Creating library D:\ss\pgina\Plugins\Kerberos\authdll\Debug\x64\authdll.lib and object D:\ss\pgina\Plugins\Kerberos\authdll\Debug\x64\authdll.exp
+         authdll.vcxproj -> D:\ss\pgina\Plugins\Kerberos\authdll\Debug\x64\authdll.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"D:\ss\pgina\Plugins\Kerberos\authdll\Debug\x64\authdll.dll.embed.manifest" /manifest D:\ss\pgina\Plugins\Kerberos\authdll\Debug\x64\authdll.dll.intermediate.manifest
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"D:\ss\pgina\Plugins\Kerberos\authdll\Debug\x64\authdll.dll.embed.manifest.res" D:\ss\pgina\Plugins\Kerberos\authdll\Debug\x64\authdll_manifest.rc 
+       LinkEmbedManifest:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\ss\pgina\Plugins\Kerberos\authdll\Debug\x64\authdll.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib secur32.lib /MANIFEST /ManifestFile:"D:\ss\pgina\Plugins\Kerberos\authdll\Debug\x64\authdll.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\ss\pgina\Plugins\Kerberos\authdll\Debug\x64\authdll.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\ss\pgina\Plugins\Kerberos\authdll\Debug\x64\authdll.lib" /MACHINE:X64 /DLL D:\ss\pgina\Plugins\Kerberos\authdll\Debug\x64\authdll.dll.embed.manifest.res
+         D:\ss\pgina\Plugins\Kerberos\authdll\Debug\x64\authfuncs.obj
+            Creating library D:\ss\pgina\Plugins\Kerberos\authdll\Debug\x64\authdll.lib and object D:\ss\pgina\Plugins\Kerberos\authdll\Debug\x64\authdll.exp
+         authdll.vcxproj -> D:\ss\pgina\Plugins\Kerberos\authdll\Debug\x64\authdll.dll
+       PostBuildEvent:
+         call "D:\ss\pgina\Plugins\Kerberos\authdll\build.cmd" devenv "D:\ss\pgina\Plugins\Kerberos\authdll\authdll.vcxproj" /Project authdll /Build "Debug|Win32"
+         :VCEnd
+         
+         Microsoft (R) Visual Studio Version 10.0.40219.1.
+         Copyright (C) Microsoft Corp. All rights reserved.
+         
+         The evaluation period for Visual Studio Trial ends in 29 days.
+         1>------ Build started: Project: authdll, Configuration: Debug Win32 ------
+     1>C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v12.0\CodeAnalysis\Microsoft.CodeAnalysis.targets(214,5): error MSB4175: The task factory "CodeTaskFactory" could not be loaded from the assembly "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Build.Tasks.v12.0.dll". Could not load file or assembly 'file:///C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Build.Tasks.v12.0.dll' or one of its dependencies. The system cannot find the file specified.
+         ========== Build: 0 succeeded, 1 failed, 0 up-to-date, 0 skipped ==========
+         The system cannot find the file specified.
+         Could Not Find D:\ss\pgina\Plugins\Kerberos\authdll\Debug\Win32\*.lib
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets(113,5): error MSB3073: The command "call "D:\ss\pgina\Plugins\Kerberos\authdll\build.cmd" devenv "D:\ss\pgina\Plugins\Kerberos\authdll\authdll.vcxproj" /Project authdll /Build "Debug|Win32"
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets(113,5): error MSB3073: :VCEnd" exited with code 1.
+     1>Done Building Project "D:\ss\pgina\Plugins\Kerberos\authdll\authdll.vcxproj" (Rebuild target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:02.66

@@ -236,17 +236,17 @@ var pf: string;
 begin
 	Result := true;
 
-    if (CurPageID = wpWelcome) and (not IsAdminLoggedOn()) and Result then begin
+    if (CurPageID = wpWelcome) and (not IsAdmin()) and Result then begin
    
         if (Wizardform.PrevAppDir <> '') then begin
-            pf := ExpandConstant('{pf}');
+            pf := ExpandConstant('{commonpf}');
             if Copy(Wizardform.PrevAppDir,1,Length(pf)) = pf then begin
                 SuppressibleMsgBox(CustomMessage('previousinstall_admin'), mbConfirmation, MB_OK, IDOK);
                 Result := false;
             end;
         end;
     end;
-    if (CurPageID = wpWelcome) and (GetArrayLength(products) > 0) and (not IsAdminLoggedOn()) and Result then begin
+    if (CurPageID = wpWelcome) and (GetArrayLength(products) > 0) and (not IsAdmin()) and Result then begin
         SuppressibleMsgBox(FmtMessage(CustomMessage('depdownload_admin'), [downloadMessage]), mbConfirmation, MB_OK, IDOK);
         Result := false;
     end;

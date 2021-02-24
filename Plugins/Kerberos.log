@@ -1,0 +1,25 @@
+1>------ Rebuild All started: Project: authdll, Configuration: Release Win32 ------
+1>  authfuncs.cpp
+1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(D:\ss\pgina\Plugins\Kerberos\authdll\Release\Win32\authdll.dll) does not match the Linker's OutputFile property value (D:\ss\pgina\Plugins\bin\authdll.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+1>     Creating library D:\ss\pgina\Plugins\Kerberos\authdll\Release\Win32\authdll.lib and object D:\ss\pgina\Plugins\Kerberos\authdll\Release\Win32\authdll.exp
+1>  Generating code
+1>  Finished generating code
+1>  authdll.vcxproj -> D:\ss\pgina\Plugins\Kerberos\authdll\Release\Win32\authdll.dll
+1>  
+1>  Microsoft (R) Visual Studio Version 10.0.40219.1.
+1>  Copyright (C) Microsoft Corp. All rights reserved.
+1>  
+1>  The evaluation period for Visual Studio Trial ends in 29 days.
+1>  1>------ Build started: Project: authdll, Configuration: Release x64 ------
+1>  1>  authfuncs.cpp
+1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(D:\ss\pgina\Plugins\Kerberos\authdll\Release\x64\authdllx64.dll) does not match the Linker's OutputFile property value (D:\ss\pgina\Plugins\bin\authdllx64.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+1>  1>     Creating library D:\ss\pgina\Plugins\Kerberos\authdll\Release\x64\authdllx64.lib and object D:\ss\pgina\Plugins\Kerberos\authdll\Release\x64\authdllx64.exp
+1>  1>  Generating code
+1>  1>  Finished generating code
+1>  1>  authdll.vcxproj -> D:\ss\pgina\Plugins\Kerberos\authdll\Release\x64\authdllx64.dll
+1>  ========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+1>  D:\ss\pgina\Plugins\Kerberos\authdll\Release\Win32\authdll.log - The process cannot access the file because it is being used by another process.
+1>  Could Not Find D:\ss\pgina\Plugins\Kerberos\authdll\Debug\Win32\*.lib
+1>  Could Not Find D:\ss\pgina\Plugins\Kerberos\authdll\Debug\x64\*.lib
+========== Rebuild All: 1 succeeded, 0 failed, 0 skipped ==========
+

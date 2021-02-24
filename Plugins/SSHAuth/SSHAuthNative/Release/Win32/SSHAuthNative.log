@@ -1,0 +1,40 @@
+﻿Build started 22 Feb 2021 14:55:31.
+     1>Project "D:\ss\pgina\Plugins\SSHAuth\SSHAuthNative\SSHAuthNative.vcxproj" on node 2 (rebuild target(s)).
+     1>InitializeBuildStatus:
+         Creating "D:\ss\pgina\Plugins\SSHAuth\SSHAuthNative\Release\Win32\SSHAuthNative.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Ix86 /Zi /nologo /W3 /WX- /O2 /Oy- /GL /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"D:\ss\pgina\Plugins\SSHAuth\SSHAuthNative\Release\Win32\\" /Fd"D:\ss\pgina\Plugins\SSHAuth\SSHAuthNative\Release\Win32\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt SSHAuthNative.cpp
+         SSHAuthNative.cpp
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(D:\ss\pgina\Plugins\SSHAuth\SSHAuthNative\Release\Win32\SSHAuthNative.dll) does not match the Linker's OutputFile property value (D:\ss\pgina\Plugins\bin\SSHAuthNative.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\bin\SSHAuthNative.dll" /INCREMENTAL:NO /NOLOGO ws2_32.lib crypt32.lib x86\zlibstat.lib x86\libssl.lib x86\libcrypto.lib x86\libssh2.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"D:\ss\pgina\Plugins\SSHAuth\SSHAuthNative\Release\Win32\SSHAuthNative.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /PDB:"D:\ss\pgina\Plugins\SSHAuth\SSHAuthNative\Release\Win32\SSHAuthNative.pdb" /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\ss\pgina\Plugins\SSHAuth\SSHAuthNative\Release\Win32\SSHAuthNative.lib" /MACHINE:X86 /DLL D:\ss\pgina\Plugins\SSHAuth\SSHAuthNative\Release\Win32\SSHAuthNative.obj /NODEFAULTLIB:libcmt.lib 
+            Creating library D:\ss\pgina\Plugins\SSHAuth\SSHAuthNative\Release\Win32\SSHAuthNative.lib and object D:\ss\pgina\Plugins\SSHAuth\SSHAuthNative\Release\Win32\SSHAuthNative.exp
+         Generating code
+         Finished generating code
+         SSHAuthNative.vcxproj -> D:\ss\pgina\Plugins\SSHAuth\SSHAuthNative\Release\Win32\SSHAuthNative.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"..\..\bin\SSHAuthNative.dll;#2" /manifest D:\ss\pgina\Plugins\SSHAuth\SSHAuthNative\Release\Win32\SSHAuthNative.dll.intermediate.manifest
+       PostBuildEvent:
+         call "D:\ss\pgina\Plugins\SSHAuth\SSHAuthNative\build.cmd" devenv "D:\ss\pgina\Plugins\SSHAuth\SSHAuthNative\SSHAuthNative.vcxproj" /Project SSHAuthNative /Build "Release|x64"
+         :VCEnd
+         
+         Microsoft (R) Visual Studio Version 10.0.40219.1.
+         Copyright (C) Microsoft Corp. All rights reserved.
+         
+         The evaluation period for Visual Studio Trial ends in 29 days.
+         1>------ Build started: Project: SSHAuthNative, Configuration: Release x64 ------
+         1>  SSHAuthNative.cpp
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(D:\ss\pgina\Plugins\SSHAuth\SSHAuthNative\Release\x64\SSHAuthNativex64.dll) does not match the Linker's OutputFile property value (D:\ss\pgina\Plugins\bin\SSHAuthNativex64.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+         1>     Creating library D:\ss\pgina\Plugins\SSHAuth\SSHAuthNative\Release\x64\SSHAuthNativex64.lib and object D:\ss\pgina\Plugins\SSHAuth\SSHAuthNative\Release\x64\SSHAuthNativex64.exp
+         1>  Generating code
+         1>  Finished generating code
+         1>  SSHAuthNative.vcxproj -> D:\ss\pgina\Plugins\SSHAuth\SSHAuthNative\Release\x64\SSHAuthNativex64.dll
+         ========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+         D:\ss\pgina\Plugins\SSHAuth\SSHAuthNative\Release\Win32\SSHAuthNative.log - The process cannot access the file because it is being used by another process.
+         The system cannot find the path specified.
+         The system cannot find the path specified.
+     1>Done Building Project "D:\ss\pgina\Plugins\SSHAuth\SSHAuthNative\SSHAuthNative.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.93

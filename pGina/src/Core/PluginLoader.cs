@@ -186,8 +186,9 @@ namespace pGina.Core
 
             m_logger.DebugFormat("Loading plugins from {0}", dir);
 
-            string[] files = Directory.GetFiles(dir, "pGina.Plugin.*.dll");
-            foreach (string file in files)
+            string[] files = Directory.GetFiles(dir, "*.dll"); /*for pgina core plugins only: pGina.Plugin.*.dll.*/
+            
+            foreach (string file in files) 
             {
                 try
                 {

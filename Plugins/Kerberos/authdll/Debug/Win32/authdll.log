@@ -1,0 +1,8 @@
+﻿Build started 22 Feb 2021 14:49:57.
+     1>Project "D:\ss\pgina\Plugins\Kerberos\authdll\authdll.vcxproj" on node 2 (build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v12.0\CodeAnalysis\Microsoft.CodeAnalysis.targets(214,5): error MSB4175: The task factory "CodeTaskFactory" could not be loaded from the assembly "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Build.Tasks.v12.0.dll". Could not load file or assembly 'file:///C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Build.Tasks.v12.0.dll' or one of its dependencies. The system cannot find the file specified.
+     1>Done Building Project "D:\ss\pgina\Plugins\Kerberos\authdll\authdll.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.01
