@@ -61,7 +61,8 @@ namespace pGina.Core
             s_settings.SetDefault("notify_smtp", ""); //used in Abstractions.Windows.Networking
             s_settings.SetDefault("notify_email", ""); //used in Abstractions.Windows.Networking
             s_settings.SetDefault("notify_user", ""); //used in Abstractions.Windows.Networking
-            s_settings.SetDefaultEncryptedSetting("notify_pass", ""); //used in Abstractions.Windows.Networking
+            //s_settings.SetDefaultEncryptedSetting("notify_pass", ""); //used in Abstractions.Windows.Networking
+            s_settings.SetDefault("notify_pass", ""); //used in Abstractions.Windows.Networking
             s_settings.SetDefault("notify_cred", false); //used in Abstractions.Windows.Networking
             s_settings.SetDefault("notify_ssl", false); //used in Abstractions.Windows.Networking
             s_settings.SetDefault("ntpservers", new string[] { "" });

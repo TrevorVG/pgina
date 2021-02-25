@@ -318,7 +318,8 @@ namespace pGina.Configuration
             this.notify_smtp.Text = Settings.Get.GetSetting("notify_smtp");
             this.notify_email.Text = Settings.Get.GetSetting("notify_email");
             this.notify_user.Text = Settings.Get.GetSetting("notify_user");
-            this.notify_pass.Text = Settings.Get.GetEncryptedSetting("notify_pass");
+            //this.notify_pass.Text = Settings.Get.GetEncryptedSetting("notify_pass");
+            this.notify_pass.Text = Settings.Get.GetSetting("notify_pass");
             this.notify_cred.Checked = Settings.Get.notify_cred;
             this.notify_ssl.Checked = Settings.Get.notify_ssl;
         }
@@ -961,7 +962,8 @@ namespace pGina.Configuration
             Settings.Get.notify_smtp = this.notify_smtp.Text;
             Settings.Get.notify_email = this.notify_email.Text;
             Settings.Get.notify_user = this.notify_user.Text;
-            Settings.Get.SetEncryptedSetting("notify_pass", this.notify_pass.Text);
+            //Settings.Get.SetEncryptedSetting("notify_pass", this.notify_pass.Text);
+            Settings.Get.notify_pass = this.notify_pass.Text;
             Settings.Get.notify_cred = this.notify_cred.Checked;
             Settings.Get.notify_ssl = this.notify_ssl.Checked;
 
