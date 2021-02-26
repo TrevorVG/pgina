@@ -1,4 +1,10 @@
 1>------ Rebuild All started: Project: Lib, Configuration: Release x64 ------
+1>Build started 2021/02/26 11:56:52.
+1>_PrepareForClean:
+1>  Deleting file "C:\ss\pgina\pGina\src\\build\Lib\x64\Release\Lib.lastbuildstate".
+1>InitializeBuildStatus:
+1>  Creating "C:\ss\pgina\pGina\src\\build\Lib\x64\Release\Lib.unsuccessfulbuild" because "AlwaysCreate" was specified.
+1>ClCompile:
 1>  BinaryReader.cpp
 1>  BinaryWriter.cpp
 1>  Helpers.cpp
@@ -8,24 +14,58 @@
 1>  PipeClient.cpp
 1>  Registry.cpp
 1>  Threading.cpp
-1>  Lib.vcxproj -> D:\ss\pgina\pGina\src\\bin\x64\NativeLib.lib
+1>Lib:
+1>  Lib.vcxproj -> C:\ss\pgina\pGina\src\\bin\x64\NativeLib.lib
+1>FinalizeBuildStatus:
+1>  Deleting file "C:\ss\pgina\pGina\src\\build\Lib\x64\Release\Lib.unsuccessfulbuild".
+1>  Touching "C:\ss\pgina\pGina\src\\build\Lib\x64\Release\Lib.lastbuildstate".
+1>
+1>Build succeeded.
+1>
+1>Time Elapsed 00:00:03.30
 2>------ Rebuild All started: Project: NativeLibTest, Configuration: Release x64 ------
 3>------ Rebuild All started: Project: CredentialProvider, Configuration: Release x64 ------
+2>Build started 2021/02/26 11:56:56.
+2>_PrepareForClean:
+2>  Deleting file "C:\ss\pgina\pGina\src\\build\NativeLibTest\x64\Release\NativeLibTest.lastbuildstate".
+2>InitializeBuildStatus:
+2>  Creating "C:\ss\pgina\pGina\src\\build\NativeLibTest\x64\Release\NativeLibTest.unsuccessfulbuild" because "AlwaysCreate" was specified.
+2>ClCompile:
 2>  NativeLibTest.cpp
+3>Build started 2021/02/26 11:56:56.
+3>_PrepareForClean:
+3>  Deleting file "C:\ss\pgina\pGina\src\\build\CredentialProvider\x64\Release\CredentialProvider.lastbuildstate".
+3>InitializeBuildStatus:
+3>  Creating "C:\ss\pgina\pGina\src\\build\CredentialProvider\x64\Release\CredentialProvider.unsuccessfulbuild" because "AlwaysCreate" was specified.
+3>ClCompile:
 3>  ClassFactory.cpp
 2>  stdafx.cpp
 3>  Credential.cpp
+2>Link:
 2>  Generating code
 3>  CredentialProviderFilter.cpp
 2>  Finished generating code
-2>  NativeLibTest.vcxproj -> D:\ss\pgina\pGina\src\\bin\x64\NativeLibTest.exe
+2>  NativeLibTest.vcxproj -> C:\ss\pgina\pGina\src\\bin\x64\NativeLibTest.exe
+2>FinalizeBuildStatus:
+2>  Deleting file "C:\ss\pgina\pGina\src\\build\NativeLibTest\x64\Release\NativeLibTest.unsuccessfulbuild".
+2>  Touching "C:\ss\pgina\pGina\src\\build\NativeLibTest\x64\Release\NativeLibTest.lastbuildstate".
+2>
+2>Build succeeded.
+2>
+2>Time Elapsed 00:00:01.60
 3>  Dll.cpp
 3>  Provider.cpp
+4>------ Rebuild All started: Project: Gina (Gina\Gina), Configuration: Release x64 ------
+4>Build started 2021/02/26 11:56:58.
+4>_PrepareForClean:
+4>  Deleting file "C:\ss\pgina\pGina\src\\build\Gina\x64\Release\Gina.lastbuildstate".
 3>  ProviderGuid.cpp
 3>  SerializationHelpers.cpp
-4>------ Rebuild All started: Project: Gina (Gina\Gina), Configuration: Release x64 ------
-3>  ServiceStateHelper.cpp
+4>InitializeBuildStatus:
+4>  Creating "C:\ss\pgina\pGina\src\\build\Gina\x64\Release\Gina.unsuccessfulbuild" because "AlwaysCreate" was specified.
+4>ClCompile:
 4>  DialogBase.cpp
+3>  ServiceStateHelper.cpp
 4>  DialogLoggedOutSAS.cpp
 4>  Dll.cpp
 4>  Gina.cpp
@@ -38,19 +78,49 @@
 4>  WinlogonDebug.cpp
 4>  WinlogonReal.cpp
 4>  WinlogonRouter.cpp
-3>     Creating library D:\ss\pgina\pGina\src\\bin\x64\pGinaCredentialProvider.lib and object D:\ss\pgina\pGina\src\\bin\x64\pGinaCredentialProvider.exp
+3>Link:
+3>     Creating library C:\ss\pgina\pGina\src\\bin\x64\pGinaCredentialProvider.lib and object C:\ss\pgina\pGina\src\\bin\x64\pGinaCredentialProvider.exp
 3>  Generating code
 3>  Finished generating code
-4>     Creating library D:\ss\pgina\pGina\src\\bin\x64\pGinaGINA.lib and object D:\ss\pgina\pGina\src\\bin\x64\pGinaGINA.exp
+4>Link:
+4>     Creating library C:\ss\pgina\pGina\src\\bin\x64\pGinaGINA.lib and object C:\ss\pgina\pGina\src\\bin\x64\pGinaGINA.exp
 4>  Generating code
 4>  Finished generating code
-3>  CredentialProvider.vcxproj -> D:\ss\pgina\pGina\src\\bin\x64\pGinaCredentialProvider.dll
-4>  Gina.vcxproj -> D:\ss\pgina\pGina\src\\bin\x64\pGinaGINA.dll
+3>  CredentialProvider.vcxproj -> C:\ss\pgina\pGina\src\\bin\x64\pGinaCredentialProvider.dll
+3>FinalizeBuildStatus:
+3>  Deleting file "C:\ss\pgina\pGina\src\\build\CredentialProvider\x64\Release\CredentialProvider.unsuccessfulbuild".
+3>  Touching "C:\ss\pgina\pGina\src\\build\CredentialProvider\x64\Release\CredentialProvider.lastbuildstate".
+3>
+3>Build succeeded.
+3>
+3>Time Elapsed 00:00:09.34
+4>  Gina.vcxproj -> C:\ss\pgina\pGina\src\\bin\x64\pGinaGINA.dll
+4>FinalizeBuildStatus:
+4>  Deleting file "C:\ss\pgina\pGina\src\\build\Gina\x64\Release\Gina.unsuccessfulbuild".
+4>  Touching "C:\ss\pgina\pGina\src\\build\Gina\x64\Release\Gina.lastbuildstate".
+4>
+4>Build succeeded.
+4>
+4>Time Elapsed 00:00:07.01
 5>------ Rebuild All started: Project: FakeWinlogon, Configuration: Release x64 ------
+5>Build started 2021/02/26 11:57:05.
+5>_PrepareForClean:
+5>  Deleting file "C:\ss\pgina\pGina\src\\build\FakeWinlogon\x64\Release\FakeWinlogon.lastbuildstate".
+5>InitializeBuildStatus:
+5>  Creating "C:\ss\pgina\pGina\src\\build\FakeWinlogon\x64\Release\FakeWinlogon.unsuccessfulbuild" because "AlwaysCreate" was specified.
+5>ClCompile:
 5>  FakeWinlogon.cpp
 5>  stdafx.cpp
+5>Link:
 5>  Generating code
 5>  Finished generating code
-5>  FakeWinlogon.vcxproj -> D:\ss\pgina\pGina\src\\bin\x64\FakeWinlogon.exe
+5>  FakeWinlogon.vcxproj -> C:\ss\pgina\pGina\src\\bin\x64\FakeWinlogon.exe
+5>FinalizeBuildStatus:
+5>  Deleting file "C:\ss\pgina\pGina\src\\build\FakeWinlogon\x64\Release\FakeWinlogon.unsuccessfulbuild".
+5>  Touching "C:\ss\pgina\pGina\src\\build\FakeWinlogon\x64\Release\FakeWinlogon.lastbuildstate".
+5>
+5>Build succeeded.
+5>
+5>Time Elapsed 00:00:00.75
 ========== Rebuild All: 5 succeeded, 0 failed, 0 skipped ==========
 
