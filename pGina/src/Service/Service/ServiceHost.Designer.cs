@@ -32,7 +32,8 @@
             // pGinaServiceHost
             //
             this.CanHandleSessionChangeEvent = true;
-            this.ServiceName = "pGina";
+            //this.ServiceName = "pGina";
+            this.ServiceName = "EntryWCCP";
         }
 
         #endregion

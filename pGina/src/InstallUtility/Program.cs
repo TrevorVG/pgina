@@ -43,9 +43,11 @@ namespace pGina.InstallUtil
 {
     class Program
     {
-        static readonly string PGINA_SERVICE_NAME = "pGina";
+        static readonly string ENTRY_SERVICE_NAME = "EntryWCCP";
+        //static readonly string PGINA_SERVICE_NAME = "pGina";
         static readonly string PGINA_SERVICE_EXE = "pGina.Service.ServiceHost.exe";
-        static readonly string PGINA_CONFIG_EXE = "pGina.Configuration.exe";
+        //static readonly string PGINA_CONFIG_EXE = "pGina.Configuration.exe";
+        static readonly string ENTRY_CONFIG_EXE = "entryWCCP.Configuration.exe";
 
         // Initalized in the static constructor
         static readonly SecurityIdentifier ADMIN_GROUP;
@@ -137,12 +139,12 @@ namespace pGina.InstallUtil
 
         private static void SetFileSystemAcls()
         {
-            if (!File.Exists(PGINA_CONFIG_EXE))
+            if (!File.Exists(ENTRY_CONFIG_EXE))
             {
-                throw new Exception(string.Format("Unable to find configuration executable: {0}", PGINA_CONFIG_EXE));
+                throw new Exception(string.Format("Unable to find configuration executable: {0}", ENTRY_CONFIG_EXE));
             }
 
-            m_logger.InfoFormat("Setting ACLs on {0}", PGINA_CONFIG_EXE);
+            m_logger.InfoFormat("Setting ACLs on {0}", ENTRY_CONFIG_EXE);
 
             FileSystemAccessRule userReadAndExecute = new FileSystemAccessRule(USERS_GROUP, FileSystemRights.ReadAndExecute, AccessControlType.Allow);
             FileSystemAccessRule userRead = new FileSystemAccessRule(USERS_GROUP, FileSystemRights.Read, AccessControlType.Allow);
@@ -150,7 +152,7 @@ namespace pGina.InstallUtil
             FileSystemAccessRule systemFull = new FileSystemAccessRule(SYSTEM_ACCT, FileSystemRights.FullControl, AccessControlType.Allow);
             FileSystemAccessRule authedUsersMod = new FileSystemAccessRule(AUTHED_USERS, FileSystemRights.Modify, AccessControlType.Allow);
             FileSystemAccessRule usersMod = new FileSystemAccessRule(USERS_GROUP, FileSystemRights.Modify, AccessControlType.Allow);
-            FileSecurity fs = File.GetAccessControl(PGINA_CONFIG_EXE);
+            FileSecurity fs = File.GetAccessControl(ENTRY_CONFIG_EXE);
 
             fs.SetAccessRuleProtection(true, false);
 
@@ -160,7 +162,7 @@ namespace pGina.InstallUtil
             fs.AddAccessRule(adminFull);
             fs.AddAccessRule(systemFull);
 
-            File.SetAccessControl(PGINA_CONFIG_EXE, fs);
+            File.SetAccessControl(ENTRY_CONFIG_EXE, fs);
         }
 
         private static void SetRegistryAcls()
@@ -346,7 +348,7 @@ namespace pGina.InstallUtil
 
             foreach (ServiceController ctrl in ServiceController.GetServices())
             {
-                if (ctrl.ServiceName == PGINA_SERVICE_NAME)
+                if (ctrl.ServiceName == ENTRY_SERVICE_NAME)
                 {
                     pGinaService = ctrl;
                     break;

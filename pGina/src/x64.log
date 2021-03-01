@@ -21,12 +21,12 @@
 2>  NativeLibTest.vcxproj -> D:\ss\pgina\pGina\src\\bin\x64\NativeLibTest.exe
 3>  Dll.cpp
 3>  Provider.cpp
+4>------ Rebuild All started: Project: Gina (Gina\Gina), Configuration: Release x64 ------
+4>  DialogBase.cpp
 3>  ProviderGuid.cpp
 3>  SerializationHelpers.cpp
-4>------ Rebuild All started: Project: Gina (Gina\Gina), Configuration: Release x64 ------
-3>  ServiceStateHelper.cpp
-4>  DialogBase.cpp
 4>  DialogLoggedOutSAS.cpp
+3>  ServiceStateHelper.cpp
 4>  Dll.cpp
 4>  Gina.cpp
 4>  GinaChain.cpp
@@ -38,19 +38,15 @@
 4>  WinlogonDebug.cpp
 4>  WinlogonReal.cpp
 4>  WinlogonRouter.cpp
-3>     Creating library D:\ss\pgina\pGina\src\\bin\x64\pGinaCredentialProvider.lib and object D:\ss\pgina\pGina\src\\bin\x64\pGinaCredentialProvider.exp
-3>  Generating code
-3>  Finished generating code
-4>     Creating library D:\ss\pgina\pGina\src\\bin\x64\pGinaGINA.lib and object D:\ss\pgina\pGina\src\\bin\x64\pGinaGINA.exp
-4>  Generating code
-4>  Finished generating code
-3>  CredentialProvider.vcxproj -> D:\ss\pgina\pGina\src\\bin\x64\pGinaCredentialProvider.dll
-4>  Gina.vcxproj -> D:\ss\pgina\pGina\src\\bin\x64\pGinaGINA.dll
+3>  
+3>CredentialProvider.rc(52): error RC2135: file not found: entry_wccp_logo.bmp
+3>  
+4>  
+4>Gina.rc(52): error RC2135: file not found: entry_wccp_logo.bmp
+4>  
 5>------ Rebuild All started: Project: FakeWinlogon, Configuration: Release x64 ------
 5>  FakeWinlogon.cpp
 5>  stdafx.cpp
-5>  Generating code
-5>  Finished generating code
-5>  FakeWinlogon.vcxproj -> D:\ss\pgina\pGina\src\\bin\x64\FakeWinlogon.exe
-========== Rebuild All: 5 succeeded, 0 failed, 0 skipped ==========
+5>LINK : fatal error LNK1181: cannot open input file 'pGinaGINA.lib'
+========== Rebuild All: 2 succeeded, 3 failed, 0 skipped ==========
 

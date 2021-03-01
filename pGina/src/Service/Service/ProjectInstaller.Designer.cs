@@ -41,7 +41,8 @@
             //
             this.pGinaServiceProjectInstaller.Description = "pGina Management Service";
             this.pGinaServiceProjectInstaller.DisplayName = "pGina Service";
-            this.pGinaServiceProjectInstaller.ServiceName = "pGina";
+            //this.pGinaServiceProjectInstaller.ServiceName = "pGina";
+            this.pGinaServiceProjectInstaller.ServiceName = "EntryWCCP";
             this.pGinaServiceProjectInstaller.StartType = System.ServiceProcess.ServiceStartMode.Automatic;
             this.pGinaServiceProjectInstaller.ServicesDependedOn = new string[] { "TermService", "LanmanServer" };
             //

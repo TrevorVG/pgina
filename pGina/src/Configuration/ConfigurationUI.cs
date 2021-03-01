@@ -61,8 +61,8 @@ namespace pGina.Configuration
             {
             }
         }
-
-        private static readonly string PGINA_SERVICE_NAME = "pGina";
+        private static readonly string ENTRY_SERVICE_NAME = "EntryWCCP";
+        //private static readonly string PGINA_SERVICE_NAME = "pGina";
 
         // Plugin information keyed by Guid
         private Dictionary<string, IPluginBase> m_plugins = new Dictionary<string, IPluginBase>();
@@ -253,7 +253,7 @@ namespace pGina.Configuration
 
         private void LoadGeneralSettings()
         {
-            m_pginaVersionLbl.Text = "pGina " +
+            m_pginaVersionLbl.Text = "Entry WCCP " +
                 System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
 
             m_tileImageTxt.Text = Settings.Get.GetSetting("TileImage", null);
@@ -270,7 +270,7 @@ namespace pGina.Configuration
             // Make sure that the pGina service is installed
             foreach( ServiceController ctrl in ServiceController.GetServices() )
             {
-                if (ctrl.ServiceName == PGINA_SERVICE_NAME)
+                if (ctrl.ServiceName == ENTRY_SERVICE_NAME)
                 {
                     m_pGinaServiceController = ctrl;
                     break;
@@ -1432,7 +1432,7 @@ namespace pGina.Configuration
                 {
                     if (String.IsNullOrEmpty(m_tileImageTxt.Text.Trim()))
                     {
-                        m_tileImage.Image = pGina.Configuration.Properties.Resources.pginalogo;
+                        m_tileImage.Image = pGina.Configuration.Properties.Resources.entrywccplogo;
                     }
                     else
                     {
@@ -1441,7 +1441,7 @@ namespace pGina.Configuration
                 }
                 catch (Exception)
                 {
-                    m_tileImage.Image = pGina.Configuration.Properties.Resources.pginalogo;
+                    m_tileImage.Image = pGina.Configuration.Properties.Resources.entrywccplogo;
                 }
 
                 ResetStageStatus();
