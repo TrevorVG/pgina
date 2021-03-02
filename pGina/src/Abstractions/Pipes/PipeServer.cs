@@ -132,7 +132,7 @@ namespace Abstractions.Pipes
                 }
                 catch (Exception e)
                 {
-                    LibraryLogging.Error("Unable to set all pipe access rules, the security of the pGina service pipe is in an unknown state!: {0}", e);
+                    LibraryLogging.Error("Unable to set all pipe access rules, the security of the Entry WCCP Service pipe is in an unknown state!: {0}", e);
                 }
             }
 

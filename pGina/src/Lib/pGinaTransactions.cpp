@@ -245,7 +245,7 @@ namespace pGina
 			}
 			else
 			{
-				Log::Warn(L"Unable to connect to pGina service pipe - LastError: 0x%08x, falling back on LogonUser()", GetLastError());
+				Log::Warn(L"Unable to connect to Entry WCCP Service pipe - LastError: 0x%08x, falling back on LogonUser()", GetLastError());
 				if(LocalLoginForUser(username, password))
 					return LoginResult(true, username ? username : L"", password ? password : L"", pGina::Helpers::GetMachineName(), L"");
 			}
@@ -315,7 +315,7 @@ namespace pGina
 			}
 			else
 			{
-				Log::Warn(L"Unable to connect to pGina service pipe - LastError: 0x%08x, giving up.", GetLastError());
+				Log::Warn(L"Unable to connect to Entry WCCP Service pipe - LastError: 0x%08x, giving up.", GetLastError());
 			}
 
 			return labelText;
@@ -368,7 +368,7 @@ namespace pGina
 			}
 			else
 			{
-				Log::Warn(L"Unable to connect to pGina service pipe - LastError: 0x%08x, giving up.", GetLastError());
+				Log::Warn(L"Unable to connect to Entry WCCP Service pipe - LastError: 0x%08x, giving up.", GetLastError());
 			}
 
 			return UserInformation();
@@ -417,7 +417,7 @@ namespace pGina
 			}
 			else
 			{
-				Log::Warn(L"Unable to connect to pGina service pipe - LastError: 0x%08x, giving up.", GetLastError());
+				Log::Warn(L"Unable to connect to Entry WCCP Service pipe - LastError: 0x%08x, giving up.", GetLastError());
 			}
 		}
 
@@ -522,7 +522,7 @@ namespace pGina
                         }
                         else
                         {
-                                Log::Warn(L"Unable to connect to pGina service pipe - LastError: 0x%08x, giving up.", GetLastError());
+                                Log::Warn(L"Unable to connect to Entry WCCP Service pipe - LastError: 0x%08x, giving up.", GetLastError());
                         }
 
                         return LoginResult();

@@ -130,7 +130,7 @@ namespace pGina.InstallUtil
             }
             else
             {
-                m_logger.Info("pGina service is not installed, skipping uninstall.");
+                m_logger.Info("Entry WCCP Service is not installed, skipping uninstall.");
             }
 
             // Uninstall CP
@@ -276,12 +276,12 @@ namespace pGina.InstallUtil
                 {
                     if (pGinaService.Status == ServiceControllerStatus.Running)
                     {
-                        m_logger.InfoFormat("Stopping pGina service...");
+                        m_logger.InfoFormat("Stopping Entry WCCP service...");
                         pGinaService.Stop();
                     }
                 }
                 else
-                    throw new Exception("pGina service not installed");
+                    throw new Exception("Entry WCCP Service not installed");
             }
         }
 
@@ -293,18 +293,18 @@ namespace pGina.InstallUtil
                 {
                     if ( pGinaService.Status != ServiceControllerStatus.Running )
                     {
-                        m_logger.InfoFormat("Starting pGina service...");
+                        m_logger.InfoFormat("Starting Entry WCCP service...");
                         pGinaService.Start();
                     }
                 }
                 else
-                    throw new Exception("pGina service not installed");
+                    throw new Exception("Entry WCCP Service not installed");
             }
         }
 
         private static void UninstallService()
         {
-            m_logger.InfoFormat("Uninstalling pGina service...");
+            m_logger.InfoFormat("Uninstalling Entry WCCP service...");
 
             // If we can find the .NET installutil.exe, run that, otherwise, use
             // ManagedInstallerClass (not recommended by MSDN, but works).
@@ -324,7 +324,7 @@ namespace pGina.InstallUtil
 
         private static void InstallService()
         {
-            m_logger.InfoFormat("Installing pGina service...");
+            m_logger.InfoFormat("Installing Entry WCCP service...");
 
             // If we can find the .NET installutil.exe, run that, otherwise, use
             // ManagedInstallerClass (not recommended by MSDN, but works).

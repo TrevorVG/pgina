@@ -1,8 +1,8 @@
 3.2.4.1 BETA (2014/12/16)
 ---------------------------
 Global:
- - Pgina service bugfixes
- - Pgina service extend max shutdowntime to 1h
+ - Entry WCCP Service bugfixes
+ - Entry WCCP Service extend max shutdowntime to 1h
 
 LDAP plugin:
  - a view bugfixes
@@ -59,7 +59,7 @@ pgSMB plugin:
 3.1.6.0 BETA (2012/10/24)
 ---------------------------
  - Support for filtering in CredUI scenario.
- - Simulator explains lack of logging when using pGina service.
+ - Simulator explains lack of logging when using Entry WCCP Service.
  - Support for using original username in the unlock scenario (CP only, #154).
  - Fix session cache bug related to CredUI login (#153).
 

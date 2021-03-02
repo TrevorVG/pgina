@@ -112,7 +112,7 @@ namespace pGina.Plugin.Ldap
                 server.Close();
                 properties.AddTrackedSingle<LdapServer>(null);
                 m_logger.ErrorFormat("Exception in LDAP authentication: {0}", e);
-                throw;  // Allow pGina service to catch and handle exception
+                throw;  // Allow Entry WCCP Service to catch and handle exception
             }
         }
 

@@ -41,14 +41,14 @@ namespace pGina.Shared.Interfaces
         Guid Uuid { get; }
 
         /// <summary>
-        /// Called when pGina service starts.  Intended for 'startup' time processing.  This is
+        /// Called when Entry WCCP Service starts.  Intended for 'startup' time processing.  This is
         /// not called during simulation so plugins should not do anything here that would
         /// be necessary for logon processing.
         /// </summary>
         void Starting();
 
         /// <summary>
-        /// Called when the pGina service is shutting down, for 'stopping' time processing.  This
+        /// Called when the Entry WCCP Service is shutting down, for 'stopping' time processing.  This
         /// is not called during simulation.  Plugins should not depend on this to clean up
         /// post logon.
         /// </summary>
@@ -112,7 +112,7 @@ namespace pGina.Shared.Interfaces
     public interface IPluginEventNotifications : IPluginBase
     {
         /// <summary>
-        /// Default System session notification (as provided to pGina service
+        /// Default System session notification (as provided to Entry WCCP Service
         ///  via http://msdn.microsoft.com/en-us/library/system.serviceprocess.servicebase.onsessionchange.aspx)
         /// </summary>
         /// <param name="changeDescription">See MSDN, includes session id and change reason (login, logout etc)</param>

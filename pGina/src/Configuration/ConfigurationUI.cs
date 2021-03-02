@@ -267,7 +267,7 @@ namespace pGina.Configuration
             // Service status checkbox
             this.logonUiShowServiceStatusCB.Checked = Settings.Get.ShowServiceStatusInLogonUi;
 
-            // Make sure that the pGina service is installed
+            // Make sure that the Entry WCCP Service is installed
             foreach( ServiceController ctrl in ServiceController.GetServices() )
             {
                 if (ctrl.ServiceName == ENTRY_SERVICE_NAME)
@@ -1202,7 +1202,7 @@ namespace pGina.Configuration
             if (m_radioUseService.Checked || m_radioCredUI.Checked)
             {
                 this.logWindow.LogTextBox.AppendText("*****" + Environment.NewLine);
-                this.logWindow.LogTextBox.AppendText("***** Log output unavailable when using pGina service or CredUI prompt." +
+                this.logWindow.LogTextBox.AppendText("***** Log output unavailable when using Entry WCCP Service or CredUI prompt." +
                     Environment.NewLine);
                 this.logWindow.LogTextBox.AppendText("*****" + Environment.NewLine);
             }
@@ -1225,7 +1225,7 @@ namespace pGina.Configuration
         {
             if (m_radioUseService.Checked)
             {
-                if (MessageBox.Show("Individual plugin results and results for each stage are unavailable when using the pGina service.  Continue?",
+                if (MessageBox.Show("Individual plugin results and results for each stage are unavailable when using the Entry WCCP Service.  Continue?",
                                 "Warning", MessageBoxButtons.YesNo) != System.Windows.Forms.DialogResult.Yes)
                     return;
 
@@ -1476,7 +1476,7 @@ namespace pGina.Configuration
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(String.Format("{0}\nA dependent service is disabled?", ex.Message), "Can't start pGina service", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(String.Format("{0}\nA dependent service is disabled?", ex.Message), "Can't start Entry service", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 UpdateServiceStatus();
             }
@@ -1495,7 +1495,7 @@ namespace pGina.Configuration
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(String.Format("{0}", ex.Message), "Can't stop pGina service", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(String.Format("{0}", ex.Message), "Can't stop Entry service", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 UpdateServiceStatus();
             }

@@ -1563,7 +1563,7 @@
       this.m_radioEmulate.Size = new System.Drawing.Size(133, 17);
       this.m_radioEmulate.TabIndex = 1;
       this.m_radioEmulate.TabStop = true;
-      this.m_radioEmulate.Text = "Emulate pGina Service";
+      this.m_radioEmulate.Text = "Emulate Entry WCCP Service";
       this.m_radioEmulate.UseVisualStyleBackColor = true;
       this.m_radioEmulate.CheckedChanged += new System.EventHandler(this.simMethodChanged);
       // 
@@ -1574,7 +1574,7 @@
       this.m_radioUseService.Name = "m_radioUseService";
       this.m_radioUseService.Size = new System.Drawing.Size(114, 17);
       this.m_radioUseService.TabIndex = 0;
-      this.m_radioUseService.Text = "Use pGina Service";
+      this.m_radioUseService.Text = "Use Entry WCCP Service";
       this.m_radioUseService.UseVisualStyleBackColor = true;
       this.m_radioUseService.CheckedChanged += new System.EventHandler(this.simMethodChanged);
       // 
@@ -1646,7 +1646,7 @@
       this.Controls.Add(this.m_tabs);
       this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
       this.Name = "ConfigurationUI";
-      this.Text = "Entry WCCP Configuration";
+      this.Text = "Entry Windows Custom Credential Provider";
       this.Load += new System.EventHandler(this.Form_Load);
       this.m_tabs.ResumeLayout(false);
       this.m_generalConfigTab.ResumeLayout(false);

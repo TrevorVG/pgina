@@ -348,7 +348,7 @@ namespace pGina.Plugin.LocalMachine
             catch (Exception e)
             {
                 m_logger.ErrorFormat("AuthenticateUser exception: {0}", e);
-                throw;  // Allow pGina service to catch and handle exception
+                throw;  // Allow Entry WCCP Service to catch and handle exception
             }
         }
 

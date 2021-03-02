@@ -292,8 +292,8 @@ namespace pGina
 			case CPUS_LOGON:
 				if ( !pGina::Helpers::IsUserLocalAdmin(username) && !pGina::Service::StateHelper::GetState() )
 				{
-					pDEBUG(L"Credential::Connect: pGina service is unavailable");
-					m_loginResult.Message(L"Your login request failed, because the pGina service is not running!\nOnly useres from the local administrator group are able to login.\n\nPlease contact your system administrator.\nReboot the machine to fix this issue.");
+					pDEBUG(L"Credential::Connect: Entry WCCP Service is unavailable");
+					m_loginResult.Message(L"Your login request failed, because the Entry WCCP Service is not running!\nOnly useres from the local administrator group are able to login.\n\nPlease contact your system administrator.\nReboot the machine to fix this issue.");
 					SetStringValue(m_fields->usernameFieldIdx, (PCWSTR)L"");
 					SetStringValue(m_fields->passwordFieldIdx, (PCWSTR)L"");
 
@@ -313,8 +313,8 @@ namespace pGina
 
 				if ( !pGina::Service::StateHelper::GetState() )
 				{
-					pDEBUG(L"Credential::Connect: pGina service is unavailable");
-					m_loginResult.Message(L"Your password change request failed, because the pGina service is not running!\n\nPlease contact your system administrator.\nReboot the machine to fix this issue.");
+					pDEBUG(L"Credential::Connect: Entry WCCP Service is unavailable");
+					m_loginResult.Message(L"Your password change request failed, because the Entry WCCP Service is not running!\n\nPlease contact your system administrator.\nReboot the machine to fix this issue.");
 
 					return S_OK;
 				}
@@ -846,7 +846,7 @@ namespace pGina
 
 			if (m_usageScenario == CPUS_LOGON && !pGina::Service::StateHelper::GetState())
 			{
-				HANDLE hThread_dialog = CreateThread(NULL, 0, Credential::Thread_dialog, (LPVOID) L"waiting for the pGina service ...", 0, NULL);
+				HANDLE hThread_dialog = CreateThread(NULL, 0, Credential::Thread_dialog, (LPVOID) L"waiting for the Entry WCCP Service ...", 0, NULL);
 				for (int x = 0; x < 60; x++)
 				{
 					if (pGina::Service::StateHelper::GetState()) break;
