@@ -78,7 +78,7 @@ BEGIN
             VALUE "CompanyName", "Synapser"
             VALUE "FileDescription", "Entry WCCP"
             VALUE "FileVersion", "1.0.0.0"
-            VALUE "LegalCopyright", "Copyright (C) pGina Team 2016"
+            VALUE "LegalCopyright", "Copyright (C) Synapser Limited 2021"
             VALUE "ProductName", "Entry WCCP"
             VALUE "ProductVersion", "1.0.0.0"
         END

@@ -56,7 +56,7 @@ namespace pGina.Shared.Interfaces
     }
 
     /// <summary>
-    /// Plugins which wish to integrate with the pGina configuration/Plugin
+    /// Plugins which wish to integrate with the Entry WCCP Configuration/Plugin
     /// management UI must implement this interface
     /// </summary>
     public interface IPluginConfiguration : IPluginBase

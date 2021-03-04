@@ -26,8 +26,8 @@
 4>  DialogLoggedOutSAS.cpp
 3>  ProviderGuid.cpp
 3>  SerializationHelpers.cpp
-4>  Dll.cpp
 3>  ServiceStateHelper.cpp
+4>  Dll.cpp
 4>  Gina.cpp
 4>  GinaChain.cpp
 4>  GinaExports.cpp
