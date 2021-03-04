@@ -1,0 +1,40 @@
+﻿Build started 04 Mar 2021 12:39:16.
+     1>Project "D:\ss\pgina\Plugins\Kerberos\authdll\authdll.vcxproj" on node 2 (rebuild target(s)).
+     1>InitializeBuildStatus:
+         Creating "D:\ss\pgina\Plugins\Kerberos\authdll\Release\Win32\authdll.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D AUTHDLL_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"D:\ss\pgina\Plugins\Kerberos\authdll\Release\Win32\\" /Fd"D:\ss\pgina\Plugins\Kerberos\authdll\Release\Win32\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt authfuncs.cpp
+         authfuncs.cpp
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(D:\ss\pgina\Plugins\Kerberos\authdll\Release\Win32\authdll.dll) does not match the Linker's OutputFile property value (D:\ss\pgina\Plugins\bin\authdll.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\bin\authdll.dll" /INCREMENTAL:NO /NOLOGO Secur32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"D:\ss\pgina\Plugins\Kerberos\authdll\Release\Win32\authdll.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\ss\pgina\Plugins\Kerberos\authdll\Release\Win32\authdll.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\ss\pgina\Plugins\Kerberos\authdll\Release\Win32\authdll.lib" /MACHINE:X86 /DLL D:\ss\pgina\Plugins\Kerberos\authdll\Release\Win32\authfuncs.obj
+            Creating library D:\ss\pgina\Plugins\Kerberos\authdll\Release\Win32\authdll.lib and object D:\ss\pgina\Plugins\Kerberos\authdll\Release\Win32\authdll.exp
+         Generating code
+         Finished generating code
+         authdll.vcxproj -> D:\ss\pgina\Plugins\Kerberos\authdll\Release\Win32\authdll.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"..\..\bin\authdll.dll;#2" /manifest D:\ss\pgina\Plugins\Kerberos\authdll\Release\Win32\authdll.dll.intermediate.manifest
+       PostBuildEvent:
+         call "D:\ss\pgina\Plugins\Kerberos\authdll\build.cmd" devenv "D:\ss\pgina\Plugins\Kerberos\authdll\authdll.vcxproj" /Project authdll /Build "Release|x64"
+         :VCEnd
+         
+         Microsoft (R) Visual Studio Version 10.0.40219.1.
+         Copyright (C) Microsoft Corp. All rights reserved.
+         
+         The evaluation period for Visual Studio Trial ends in 19 days.
+         1>------ Build started: Project: authdll, Configuration: Release x64 ------
+         1>  authfuncs.cpp
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(D:\ss\pgina\Plugins\Kerberos\authdll\Release\x64\authdllx64.dll) does not match the Linker's OutputFile property value (D:\ss\pgina\Plugins\bin\authdllx64.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+         1>     Creating library D:\ss\pgina\Plugins\Kerberos\authdll\Release\x64\authdllx64.lib and object D:\ss\pgina\Plugins\Kerberos\authdll\Release\x64\authdllx64.exp
+         1>  Generating code
+         1>  Finished generating code
+         1>  authdll.vcxproj -> D:\ss\pgina\Plugins\Kerberos\authdll\Release\x64\authdllx64.dll
+         ========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+         D:\ss\pgina\Plugins\Kerberos\authdll\Release\Win32\authdll.log - The process cannot access the file because it is being used by another process.
+         Could Not Find D:\ss\pgina\Plugins\Kerberos\authdll\Debug\Win32\*.lib
+         Could Not Find D:\ss\pgina\Plugins\Kerberos\authdll\Debug\x64\*.lib
+     1>Done Building Project "D:\ss\pgina\Plugins\Kerberos\authdll\authdll.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.70

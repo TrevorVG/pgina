@@ -37,7 +37,7 @@ namespace Abstractions.Settings
 {
     public class DynamicSettings : DynamicObject
     {
-        public static readonly string ROOT_KEY = @"SOFTWARE\pGina3.fork";
+        public static readonly string ROOT_KEY = @"SOFTWARE\EntryWCCP";
         protected string m_rootKey = ROOT_KEY;
 
         public DynamicSettings()

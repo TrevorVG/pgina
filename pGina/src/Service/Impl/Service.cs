@@ -55,7 +55,7 @@ namespace pGina.Service.Impl
 {
     public class Service
     {
-        private ILog m_logger = LogManager.GetLogger("pGina.Service.Impl");
+        private ILog m_logger = LogManager.GetLogger("EntryWCCP.Service.Impl");
         private ILog m_abstractLogger = LogManager.GetLogger("Abstractions");
         private PipeServer m_server = null;
         private ObjectCache<int, List<SessionProperties>> m_sessionPropertyCache = new ObjectCache<int, List<SessionProperties>>();
@@ -79,7 +79,7 @@ namespace pGina.Service.Impl
         {
             try
             {
-                ILog logger = LogManager.GetLogger("pGina.Service.Exception");
+                ILog logger = LogManager.GetLogger("EntryWCCP.Service.Exception");
                 Exception e = args.ExceptionObject as Exception;
                 logger.ErrorFormat("CurrentDomain_UnhandledException: {0}", e);
 

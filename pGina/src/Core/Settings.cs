@@ -50,7 +50,7 @@ namespace pGina.Core
             s_settings.SetDefault("ServicePipeName", "pGinaPipe");
             s_settings.SetDefault("MaxClients", 25);
             s_settings.SetDefault("TraceMsgTraffic", false);
-            s_settings.SetDefault("SessionHelperExe", "pGina.Service.SessionHelper.exe");
+            s_settings.SetDefault("SessionHelperExe", "EntryWCCP.Service.SessionHelper.exe");
             s_settings.SetDefault("EnableMotd", true);
             s_settings.SetDefault("Motd", "EntryWCCP Version: %v");
             s_settings.SetDefault("GinaPassthru", false);

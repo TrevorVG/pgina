@@ -1,29 +1,19 @@
 ﻿  authfuncs.cpp
-     Creating library C:\ss\pgina\Plugins\Kerberos\authdll\Debug\x64\authdll.lib and object C:\ss\pgina\Plugins\Kerberos\authdll\Debug\x64\authdll.exp
-  authdll.vcxproj -> C:\ss\pgina\Plugins\Kerberos\authdll\Debug\x64\authdll.dll
-     Creating library C:\ss\pgina\Plugins\Kerberos\authdll\Debug\x64\authdll.lib and object C:\ss\pgina\Plugins\Kerberos\authdll\Debug\x64\authdll.exp
-  authdll.vcxproj -> C:\ss\pgina\Plugins\Kerberos\authdll\Debug\x64\authdll.dll
+     Creating library D:\ss\pgina\Plugins\Kerberos\authdll\Debug\x64\authdll.lib and object D:\ss\pgina\Plugins\Kerberos\authdll\Debug\x64\authdll.exp
+  authdll.vcxproj -> D:\ss\pgina\Plugins\Kerberos\authdll\Debug\x64\authdll.dll
+     Creating library D:\ss\pgina\Plugins\Kerberos\authdll\Debug\x64\authdll.lib and object D:\ss\pgina\Plugins\Kerberos\authdll\Debug\x64\authdll.exp
+  authdll.vcxproj -> D:\ss\pgina\Plugins\Kerberos\authdll\Debug\x64\authdll.dll
   
   Microsoft (R) Visual Studio Version 10.0.40219.1.
   Copyright (C) Microsoft Corp. All rights reserved.
   
-  The evaluation period for Visual Studio Trial ends in 29 days.
+  The evaluation period for Visual Studio Trial ends in 19 days.
   1>------ Build started: Project: authdll, Configuration: Debug Win32 ------
-  1>Build started 2021/02/26 11:58:58.
-  1>InitializeBuildStatus:
-  1>  Creating "C:\ss\pgina\Plugins\Kerberos\authdll\Debug\Win32\authdll.unsuccessfulbuild" because "AlwaysCreate" was specified.
-  1>ClCompile:
-  1>  authfuncs.cpp
-  1>Link:
-  1>     Creating library C:\ss\pgina\Plugins\Kerberos\authdll\Debug\Win32\authdll.lib and object C:\ss\pgina\Plugins\Kerberos\authdll\Debug\Win32\authdll.exp
-  1>LinkEmbedManifest:
-  1>     Creating library C:\ss\pgina\Plugins\Kerberos\authdll\Debug\Win32\authdll.lib and object C:\ss\pgina\Plugins\Kerberos\authdll\Debug\Win32\authdll.exp
-  1>  authdll.vcxproj -> C:\ss\pgina\Plugins\Kerberos\authdll\Debug\Win32\authdll.dll
-  1>FinalizeBuildStatus:
-  1>  Deleting file "C:\ss\pgina\Plugins\Kerberos\authdll\Debug\Win32\authdll.unsuccessfulbuild".
-  1>  Touching "C:\ss\pgina\Plugins\Kerberos\authdll\Debug\Win32\authdll.lastbuildstate".
-  1>
-  1>Build succeeded.
-  1>
-  1>Time Elapsed 00:00:01.11
-  ========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+  1>  
+D:\ss\pgina\Plugins\Kerberos\authdll\Debug\Win32\authdll_manifest.rc(1): error RC2135: file not found: C:\ss\pgina\Plugins\Kerberos\authdll\Debug\Win32\authdll.dll.embed.manifest
+  1>  
+  ========== Build: 0 succeeded, 1 failed, 0 up-to-date, 0 skipped ==========
+  The system cannot find the file specified.
+  Could Not Find D:\ss\pgina\Plugins\Kerberos\authdll\Debug\Win32\*.lib
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets(113,5): error MSB3073: The command "call "D:\ss\pgina\Plugins\Kerberos\authdll\build.cmd" devenv "D:\ss\pgina\Plugins\Kerberos\authdll\authdll.vcxproj" /Project authdll /Build "Debug|Win32"
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets(113,5): error MSB3073: :VCEnd" exited with code 1.

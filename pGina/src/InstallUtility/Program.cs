@@ -44,10 +44,8 @@ namespace pGina.InstallUtil
     class Program
     {
         static readonly string ENTRY_SERVICE_NAME = "EntryWCCP";
-        //static readonly string PGINA_SERVICE_NAME = "pGina";
-        static readonly string PGINA_SERVICE_EXE = "pGina.Service.ServiceHost.exe";
-        //static readonly string PGINA_CONFIG_EXE = "pGina.Configuration.exe";
-        static readonly string ENTRY_CONFIG_EXE = "entryWCCP.Configuration.exe";
+        static readonly string PGINA_SERVICE_EXE = "EntryWCCP.Service.ServiceHost.exe";
+        static readonly string ENTRY_CONFIG_EXE = "EntryWCCP.Configuration.exe";
 
         // Initalized in the static constructor
         static readonly SecurityIdentifier ADMIN_GROUP;
@@ -75,7 +73,7 @@ namespace pGina.InstallUtil
             AUTHED_USERS = new SecurityIdentifier(WellKnownSidType.AuthenticatedUserSid, null);
         }
 
-        static ILog m_logger = LogManager.GetLogger("pGina.InstallUtil");
+        static ILog m_logger = LogManager.GetLogger("EntryWCCP.InstallUtil");
 
         static int Main(string[] args)
         {

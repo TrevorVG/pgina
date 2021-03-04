@@ -1,32 +1,16 @@
-﻿Build started 2021/02/26 11:58:58.
-     1>Project "C:\ss\pgina\Plugins\Kerberos\authdll\authdll.vcxproj" on node 2 (build target(s)).
+﻿Build started 04 Mar 2021 12:34:39.
+     1>Project "D:\ss\pgina\Plugins\Kerberos\authdll\authdll.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
-         Creating "C:\ss\pgina\Plugins\Kerberos\authdll\Debug\Win32\authdll.unsuccessfulbuild" because "AlwaysCreate" was specified.
+         Touching "D:\ss\pgina\Plugins\Kerberos\authdll\Debug\Win32\authdll.unsuccessfulbuild".
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D AUTHDLL_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\ss\pgina\Plugins\Kerberos\authdll\Debug\Win32\\" /Fd"C:\ss\pgina\Plugins\Kerberos\authdll\Debug\Win32\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt authfuncs.cpp
-         authfuncs.cpp
+         All outputs are up-to-date.
        ManifestResourceCompile:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"C:\ss\pgina\Plugins\Kerberos\authdll\Debug\Win32\authdll.dll.embed.manifest.res" C:\ss\pgina\Plugins\Kerberos\authdll\Debug\Win32\authdll_manifest.rc 
-       Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\ss\pgina\Plugins\Kerberos\authdll\Debug\Win32\authdll.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib secur32.lib /MANIFEST /ManifestFile:"C:\ss\pgina\Plugins\Kerberos\authdll\Debug\Win32\authdll.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\ss\pgina\Plugins\Kerberos\authdll\Debug\Win32\authdll.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\ss\pgina\Plugins\Kerberos\authdll\Debug\Win32\authdll.lib" /MACHINE:X86 /DLL C:\ss\pgina\Plugins\Kerberos\authdll\Debug\Win32\authdll.dll.embed.manifest.res
-         C:\ss\pgina\Plugins\Kerberos\authdll\Debug\Win32\authfuncs.obj
-            Creating library C:\ss\pgina\Plugins\Kerberos\authdll\Debug\Win32\authdll.lib and object C:\ss\pgina\Plugins\Kerberos\authdll\Debug\Win32\authdll.exp
-       Manifest:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"C:\ss\pgina\Plugins\Kerberos\authdll\Debug\Win32\authdll.dll.embed.manifest" /manifest C:\ss\pgina\Plugins\Kerberos\authdll\Debug\Win32\authdll.dll.intermediate.manifest
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"C:\ss\pgina\Plugins\Kerberos\authdll\Debug\Win32\authdll.dll.embed.manifest.res" C:\ss\pgina\Plugins\Kerberos\authdll\Debug\Win32\authdll_manifest.rc 
-       LinkEmbedManifest:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\ss\pgina\Plugins\Kerberos\authdll\Debug\Win32\authdll.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib secur32.lib /MANIFEST /ManifestFile:"C:\ss\pgina\Plugins\Kerberos\authdll\Debug\Win32\authdll.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\ss\pgina\Plugins\Kerberos\authdll\Debug\Win32\authdll.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\ss\pgina\Plugins\Kerberos\authdll\Debug\Win32\authdll.lib" /MACHINE:X86 /DLL C:\ss\pgina\Plugins\Kerberos\authdll\Debug\Win32\authdll.dll.embed.manifest.res
-         C:\ss\pgina\Plugins\Kerberos\authdll\Debug\Win32\authfuncs.obj
-            Creating library C:\ss\pgina\Plugins\Kerberos\authdll\Debug\Win32\authdll.lib and object C:\ss\pgina\Plugins\Kerberos\authdll\Debug\Win32\authdll.exp
-         authdll.vcxproj -> C:\ss\pgina\Plugins\Kerberos\authdll\Debug\Win32\authdll.dll
-       PostBuildEvent:
-         call "C:\ss\pgina\Plugins\Kerberos\authdll\build.cmd" devenv "C:\ss\pgina\Plugins\Kerberos\authdll\authdll.vcxproj" /Project authdll /Build "Debug|x64"
-         :VCEnd
-       FinalizeBuildStatus:
-         Deleting file "C:\ss\pgina\Plugins\Kerberos\authdll\Debug\Win32\authdll.unsuccessfulbuild".
-         Touching "C:\ss\pgina\Plugins\Kerberos\authdll\Debug\Win32\authdll.lastbuildstate".
-     1>Done Building Project "C:\ss\pgina\Plugins\Kerberos\authdll\authdll.vcxproj" (build target(s)).
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"D:\ss\pgina\Plugins\Kerberos\authdll\Debug\Win32\authdll.dll.embed.manifest.res" D:\ss\pgina\Plugins\Kerberos\authdll\Debug\Win32\authdll_manifest.rc 
+         
+     1>D:\ss\pgina\Plugins\Kerberos\authdll\Debug\Win32\authdll_manifest.rc(1): error RC2135: file not found: C:\ss\pgina\Plugins\Kerberos\authdll\Debug\Win32\authdll.dll.embed.manifest
+         
+     1>Done Building Project "D:\ss\pgina\Plugins\Kerberos\authdll\authdll.vcxproj" (build target(s)) -- FAILED.
 
-Build succeeded.
+Build FAILED.
 
-Time Elapsed 00:00:01.11
+Time Elapsed 00:00:00.12

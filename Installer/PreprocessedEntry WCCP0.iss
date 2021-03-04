@@ -43,28 +43,32 @@ Name: "en"; MessagesFile: "compiler:Default.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "..\pGina\src\bin\entryWCCP.Configuration.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "..\pGina\src\bin\EntryWCCP.Configuration.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "..\pGina\src\bin\*.exe"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "..\pGina\src\bin\*.dll"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "..\pGina\src\bin\*.xml"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "..\pGina\src\bin\*.config"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "..\Plugins\bin\*.exe"; DestDir: "{app}\Plugins"; Flags: ignoreversion recursesubdirs createallsubdirs
+;Source: "..\Plugins\bin\*.exe"; DestDir: "{app}\Plugins"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "..\Plugins\bin\*.dll"; DestDir: "{app}\Plugins"; Flags: ignoreversion recursesubdirs createallsubdirs
-;Source: "..\Plugins\bin\*.xml"; DestDir: "{app}\Plugins"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "..\Plugins\bin\*.xml"; DestDir: "{app}\Plugins"; Flags: ignoreversion recursesubdirs createallsubdirs
 ;Source: "..\Plugins\bin\*.config"; DestDir: "{app}\Plugins"; Flags: ignoreversion recursesubdirs createallsubdirs
+;Source: "..\..\synapsec-entry-integrations\synapsec-entry-integrations-wincredprod\synapsec.entry.integrations.wincredprod.net\bin\*.exe"; DestDir: "{app}\Plugins"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "..\..\synapsec-entry-integrations\synapsec-entry-integrations-wincredprod\synapsec.entry.integrations.wincredprod.net\bin\*.dll"; DestDir: "{app}\Plugins"; Flags: ignoreversion recursesubdirs createallsubdirs
+;Source: "..\..\synapsec-entry-integrations\synapsec-entry-integrations-wincredprod\synapsec.entry.integrations.wincredprod.net\bin\*.xml"; DestDir: "{app}\Plugins"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "..\..\synapsec-entry-integrations\synapsec-entry-integrations-wincredprod\synapsec.entry.integrations.wincredprod.net\bin\*.config"; DestDir: "{app}\Plugins"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
-Name: "{group}\Entry WCCP"; Filename: "{app}\entryWCCP.Configuration.exe"
-Name: "{commondesktop}\Entry WCCP"; Filename: "{app}\entryWCCP.Configuration.exe"; Tasks: desktopicon
+Name: "{group}\Entry WCCP"; Filename: "{app}\EntryWCCP.Configuration.exe"
+Name: "{commondesktop}\Entry WCCP"; Filename: "{app}\EntryWCCP.Configuration.exe"; Tasks: desktopicon
 
 [Run]
-Filename: "{app}\pGina.InstallUtil.exe"; Parameters: "post-install"; StatusMsg: "Installing service, EntryWCCP/GINA, and setting permissions..."; WorkingDir: "{app}"; Flags: runhidden
-Filename: "{app}\entryWCCP.Configuration.exe"; Description: "{cm:LaunchProgram,Entry WCCP}"; Flags: nowait postinstall skipifsilent runascurrentuser
+Filename: "{app}\EntryWCCP.InstallUtil.exe"; Parameters: "post-install"; StatusMsg: "Installing service, EntryWCCP/GINA, and setting permissions..."; WorkingDir: "{app}"; Flags: runhidden
+Filename: "{app}\EntryWCCP.Configuration.exe"; Description: "{cm:LaunchProgram,Entry WCCP}"; Flags: nowait postinstall skipifsilent runascurrentuser
 Filename: "sc"; Parameters: "failure pgina reset= 0 actions= restart/5000"
 
 [UninstallRun]
-Filename: "{app}\pGina.InstallUtil.exe"; Parameters: "post-uninstall"; StatusMsg: "Removing service and WCCP/GINA..."; WorkingDir: "{app}"; Flags: runhidden
+Filename: "{app}\EntryWCCP.InstallUtil.exe"; Parameters: "post-uninstall"; StatusMsg: "Removing service and WCCP/GINA..."; WorkingDir: "{app}"; Flags: runhidden
 
 ; More custom stuff from [] for ensuring user gets everything needed
 [Files]

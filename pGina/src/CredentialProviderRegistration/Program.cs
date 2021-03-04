@@ -37,7 +37,7 @@ namespace pGina.CredentialProvider.Registration
 {
     class Program
     {
-        public static readonly string EXE_NAME = "pGina.CredentialProvider.Registration.exe";
+        public static readonly string EXE_NAME = "EntryWCCP.CredentialProvider.Registration.exe";
 
         static Program()
         {

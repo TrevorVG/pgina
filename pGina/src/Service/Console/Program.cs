@@ -37,7 +37,7 @@ namespace pGina.Service.Console
     {
         static void Main(string[] args)
         {
-            ILog logger = LogManager.GetLogger("pGina.Console");
+            ILog logger = LogManager.GetLogger("EntryWCCP.Console");
             pGina.Service.Impl.Service service = new pGina.Service.Impl.Service();
             logger.DebugFormat("Service created, using plugin directories: ");
             foreach (string dir in service.PluginDirectories)

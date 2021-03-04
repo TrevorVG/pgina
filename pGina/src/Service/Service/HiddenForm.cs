@@ -12,7 +12,7 @@ namespace Service
 {
     public partial class HiddenForm : Form
     {
-        private ILog m_logger = LogManager.GetLogger("pGina.Service.HiddenForm");
+        private ILog m_logger = LogManager.GetLogger("EntryWCCP.Service.HiddenForm");
         private pGina.Service.Impl.ServiceThread m_serviceThreadObj = null;
 
         public HiddenForm(pGina.Service.Impl.ServiceThread serviceThreadObj)
