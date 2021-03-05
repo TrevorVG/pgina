@@ -24,8 +24,8 @@
 3>  ProviderGuid.cpp
 3>  SerializationHelpers.cpp
 4>------ Rebuild All started: Project: Gina (Gina\Gina), Configuration: Release Win32 ------
-3>  ServiceStateHelper.cpp
 4>  DialogBase.cpp
+3>  ServiceStateHelper.cpp
 4>  DialogLoggedOutSAS.cpp
 4>  Dll.cpp
 4>  Gina.cpp
@@ -38,13 +38,13 @@
 4>  WinlogonDebug.cpp
 4>  WinlogonReal.cpp
 4>  WinlogonRouter.cpp
-3>     Creating library D:\ss\pgina\pGina\src\\bin\Win32\EntryCustomCredentialProvider.lib and object D:\ss\pgina\pGina\src\\bin\Win32\EntryCustomCredentialProvider.exp
+3>     Creating library D:\ss\pgina\pGina\src\\bin\Win32\pGinaCredentialProvider.lib and object D:\ss\pgina\pGina\src\\bin\Win32\pGinaCredentialProvider.exp
 3>  Generating code
 3>  Finished generating code
 4>     Creating library D:\ss\pgina\pGina\src\\bin\Win32\pGinaGINA.lib and object D:\ss\pgina\pGina\src\\bin\Win32\pGinaGINA.exp
 4>  Generating code
 4>  Finished generating code
-3>  CredentialProvider.vcxproj -> D:\ss\pgina\pGina\src\\bin\Win32\EntryCustomCredentialProvider.dll
+3>  CredentialProvider.vcxproj -> D:\ss\pgina\pGina\src\\bin\Win32\pGinaCredentialProvider.dll
 4>  Gina.vcxproj -> D:\ss\pgina\pGina\src\\bin\Win32\pGinaGINA.dll
 5>------ Rebuild All started: Project: FakeWinlogon, Configuration: Release Win32 ------
 5>  FakeWinlogon.cpp

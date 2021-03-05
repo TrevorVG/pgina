@@ -197,10 +197,10 @@ namespace pGina.CredentialProvider.Registration
     {
         /*
          [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\Credential Providers\{**GUID**}]
-         @="EntryCustomCredentialProvider"
+         @="pGinaCredentialProvider"
 
          [HKEY_CLASSES_ROOT\CLSID\{**GUID**}]
-         @="EntryCustomCredentialProvider"
+         @="pGinaCredentialProvider"
 
          [HKEY_CLASSES_ROOT\CLSID\{**GUID**}\InprocServer32]
          @="SampleCredUICredentialProvider.dll"
@@ -246,7 +246,7 @@ namespace pGina.CredentialProvider.Registration
         {
             // Defaults for pGina Credential Provider
             this.CpInfo.ProviderGuid = new Guid("{D0BEFEFB-3D2C-44DA-BBAD-3B2D04557246}");
-            this.CpInfo.ShortName = "EntryCustomCredentialProvider";
+            this.CpInfo.ShortName = "pGinaCredentialProvider";
         }
 
         private string GetCpDllPath()
@@ -259,7 +259,7 @@ namespace pGina.CredentialProvider.Registration
             return Path.Combine(WINDIR, "Syswow64", CpInfo.ShortName + ".dll");
         }
 
-        public override void Install()
+        public override void Install() 
         {
             m_logger.InfoFormat("Installing credential provider {0} {{{1}}}",
                 CpInfo.ShortName,
