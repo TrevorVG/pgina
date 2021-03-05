@@ -56,6 +56,7 @@ namespace pGina.Plugin.Ldap.Test
             m_settings.RequireCert = validateCert;
             m_settings.SearchDN = searchDN;
             m_settings.SetEncryptedSetting("SearchPW", searchPW);
+            //m_settings.SearchPW = searchPW;
             m_settings.GroupDnPattern = "cn=%g,ou=Group,dc=example,dc=com";
             m_settings.GroupMemberAttrib = "memberUid";
 
