@@ -126,8 +126,8 @@ namespace pGina.Plugin.Ldap
             string searchDn = Settings.Store.SearchDN;
             searchDnTextBox.Text = searchDn;
 
-            string searchPw = Settings.Store.GetEncryptedSetting("SearchPW");
-            //string searchPw = Settings.Store.SearchPW;
+            //string searchPw = Settings.Store.GetEncryptedSetting("SearchPW");
+            string searchPw = Settings.Store.SearchPW;
             searchPassTextBox.Text = searchPw;
 
             // Authentication tab
@@ -373,8 +373,8 @@ namespace pGina.Plugin.Ldap
             Settings.Store.ServerCertFile = sslCertFileTextBox.Text.Trim();
             Settings.Store.UseAuthBindForAuthzAndGateway = (useAuthBindForAuthzAndGatewayCb.CheckState == CheckState.Checked);
             Settings.Store.SearchDN = searchDnTextBox.Text.Trim();
-            Settings.Store.SetEncryptedSetting("SearchPW", searchPassTextBox.Text);
-            //Settings.Store.SearchPW = searchPassTextBox.Text.Trim();
+            //Settings.Store.SetEncryptedSetting("SearchPW", searchPassTextBox.Text);
+            Settings.Store.SearchPW = searchPassTextBox.Text;
 
             // Authentication
             Settings.Store.AllowEmptyPasswords = this.allowEmptyPwCB.Checked;
