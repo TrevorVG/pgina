@@ -253,7 +253,7 @@ namespace pGina.Configuration
 
         private void LoadGeneralSettings()
         {
-            m_pginaVersionLbl.Text = "pGina " +
+            m_pginaVersionLbl.Text = "Entry WCCP " +
                 System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
 
             m_tileImageTxt.Text = Settings.Get.GetSetting("TileImage", null);
@@ -1208,7 +1208,7 @@ namespace pGina.Configuration
             {
                 this.logWindow.LogTextBox.AppendText("****" + Environment.NewLine);
                 this.logWindow.LogTextBox.AppendText("**** Simulated login starting: " + DateTime.Now.ToString("F") + Environment.NewLine);
-                this.logWindow.LogTextBox.AppendText("**** pGina Version:  " +
+                this.logWindow.LogTextBox.AppendText("**** Entry WCCP Version:  " +
                     System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString() + Environment.NewLine);
                 this.logWindow.LogTextBox.AppendText("**** Enabled plugins: " + Environment.NewLine);
                 foreach (string s in GetPluginList())
