@@ -499,7 +499,7 @@
       this.servGB.Size = new System.Drawing.Size(236, 106);
       this.servGB.TabIndex = 2;
       this.servGB.TabStop = false;
-      this.servGB.Text = "pGina Service";
+      this.servGB.Text = "EntryWCCP Service";
       // 
       // logonUiShowServiceStatusCB
       // 

@@ -62,7 +62,7 @@ namespace pGina.Configuration
             }
         }
 
-        private static readonly string PGINA_SERVICE_NAME = "pGina";
+        private static readonly string PGINA_SERVICE_NAME = "EntryWCCP";
 
         // Plugin information keyed by Guid
         private Dictionary<string, IPluginBase> m_plugins = new Dictionary<string, IPluginBase>();
