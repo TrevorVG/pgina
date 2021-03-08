@@ -135,6 +135,9 @@
     <None Include="Resources\redx.png" />
     <None Include="Resources\grayBar.png" />
     <None Include="Resources\greenCheckMark.png" />
+    <None Include="Resources\EntryWCCPLogoAlpha.png" />
+    <None Include="Resources\EntryWCCPIconAlpha.ico" />
+    <None Include="Resources\entrywccplogobitmap.bmp" />
     <Content Include="Resources\pgina_icons.ico" />
     <None Include="Resources\pginalogo.bmp" />
   </ItemGroup>
