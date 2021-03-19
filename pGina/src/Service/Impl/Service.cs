@@ -339,14 +339,14 @@ namespace pGina.Service.Impl
                                 Settings.s_settings.SetSetting("LastUsername", String.Format("{0}\\{1}", sessionDriver.UserInformation.Domain, sessionDriver.UserInformation.Username));
                             }
                             m_logger.InfoFormat("Sucess");
-                            return new LoginResponseMessage()
-                            {
-                                Result = true,
-                                Message = "",
-                                Username = sessionDriver.UserInformation.Username,
-                                Domain = sessionDriver.UserInformation.Domain,
-                                Password = sessionDriver.UserInformation.Password
-                            };
+                            //return new LoginResponseMessage()
+                            //{
+                            //    Result = true,
+                            //    Message = "",
+                            //    Username = sessionDriver.UserInformation.Username,
+                            //    Domain = sessionDriver.UserInformation.Domain,
+                            //    Password = sessionDriver.UserInformation.Password
+                            //};
                         }
                         else
                         {
