@@ -339,6 +339,7 @@ namespace pGina.Service.Impl
                                 Settings.s_settings.SetSetting("LastUsername", String.Format("{0}\\{1}", sessionDriver.UserInformation.Domain, sessionDriver.UserInformation.Username));
                             }
                             m_logger.InfoFormat("Sucess");
+              //TODO : Move code to end of 
                             //return new LoginResponseMessage()
                             //{
                             //    Result = true,
