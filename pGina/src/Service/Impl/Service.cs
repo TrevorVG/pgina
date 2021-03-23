@@ -425,14 +425,14 @@ namespace pGina.Service.Impl
                                     Settings.s_settings.SetSetting("LastUsername", String.Format("{0}", sessionDriver.UserInformation.Username));
                                 }
                             }
-                            return new LoginResponseMessage()
-                            {
-                                Result = result.Success,
-                                Message = (result.Success) ? "Local non pGina user" : "Unknown username or bad password",
-                                Username = sessionDriver.UserInformation.Username,
-                                Domain = sessionDriver.UserInformation.Domain,
-                                Password = sessionDriver.UserInformation.Password
-                            };
+                            // return new LoginResponseMessage()
+                            // {
+                            //     Result = result.Success,
+                            //     Message = (result.Success) ? "Local non pGina user" : "Unknown username or bad password",
+                            //     Username = sessionDriver.UserInformation.Username,
+                            //     Domain = sessionDriver.UserInformation.Domain,
+                            //     Password = sessionDriver.UserInformation.Password
+                            // };
                         }
                     }
 
