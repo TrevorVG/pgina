@@ -47,14 +47,6 @@ END
 
 /////////////////////////////////////////////////////////////////////////////
 //
-// Bitmap
-//
-
-IDB_PGINA_LOGO          BITMAP                  "entrywccplogo.bmp"
-
-
-/////////////////////////////////////////////////////////////////////////////
-//
 // Version
 //
 
@@ -147,7 +139,7 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
 // Bitmap
 //
 
-IDB_BITMAP2             BITMAP                  "entrywccplogo.bmp"
+IDB_PGINA_LOGO             BITMAP                  "entrywccplogo.bmp"
 
 #endif    // English (United Kingdom) resources
 /////////////////////////////////////////////////////////////////////////////

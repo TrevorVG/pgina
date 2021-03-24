@@ -6,6 +6,7 @@
 #define IDB_PGINA_LOGO                  101
 #define IDD_LOGGEDOUT_SAS               102
 #define IDB_BITMAP2                     103
+#define IDB_BITMAP3                     104
 #define IDC_LOGO                        1001
 #define IDC_MOTD                        1002
 #define IDC_USERNAME_LBL                1003
@@ -22,7 +23,7 @@
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        104
+#define _APS_NEXT_RESOURCE_VALUE        105
 #define _APS_NEXT_COMMAND_VALUE         40001
 #define _APS_NEXT_CONTROL_VALUE         1012
 #define _APS_NEXT_SYMED_VALUE           101
