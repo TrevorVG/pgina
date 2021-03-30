@@ -70,6 +70,8 @@ Source: "..\Plugins\bin\*.dll"; DestDir: "{app}\Plugins"; Flags: ignoreversion r
 Source: "..\..\synapsec-entry-integrations\synapsec-entry-integrations-wincredprod\synapsec.entry.integrations.wincredprod.net\bin\*.dll"; DestDir: "{app}\Plugins"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "..\..\synapsec-entry-integrations\synapsec-entry-integrations-wincredprod\synapsec.entry.integrations.wincredprod.net\bin\*.config"; DestDir: "{app}\Plugins"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
+Source: ".\scripts\silent_script_local.ps1"; DestDir: "{tmp}"
+Source: ".\scripts\settings_import_local_no_lockout_no_ldap.reg"; DestDir: "{tmp}"
 
 [Icons]
 Name: "{group}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"
@@ -79,6 +81,9 @@ Name: "{commondesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; Tasks: 
 Filename: "{app}\pGina.InstallUtil.exe"; Parameters: "post-install"; StatusMsg: "Installing service, CP/GINA, and setting permissions..."; WorkingDir: "{app}"; Flags: runhidden
 Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, "&", "&&")}}"; Flags: nowait postinstall skipifsilent runascurrentuser
 Filename: "sc"; Parameters: "failure pgina reset= 0 actions= restart/5000"
+Filename: "powershell.exe"; \
+  Parameters: "-ExecutionPolicy Bypass -File ""{tmp}\silent_script_local.ps1"""; \
+  WorkingDir: {tmp}; Flags: runhidden
 
 [UninstallRun]
 Filename: "{app}\pGina.InstallUtil.exe"; Parameters: "post-uninstall"; StatusMsg: "Removing service and CP/GINA..."; WorkingDir: "{app}"; Flags: runhidden
