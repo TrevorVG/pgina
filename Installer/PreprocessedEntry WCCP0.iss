@@ -66,7 +66,7 @@ Name: "{commondesktop}\Entry WCCP"; Filename: "{app}\EntryWCCP.Configuration.exe
 Filename: "{app}\pGina.InstallUtil.exe"; Parameters: "post-install"; StatusMsg: "Installing service, CP/GINA, and setting permissions..."; WorkingDir: "{app}"; Flags: runhidden
 Filename: "{app}\EntryWCCP.Configuration.exe"; Description: "{cm:LaunchProgram,Entry WCCP}"; Flags: nowait postinstall skipifsilent runascurrentuser
 Filename: "sc"; Parameters: "failure pgina reset= 0 actions= restart/5000"
-Filename: "powershell.exe"; Parameters: "-ExecutionPolicy Bypass -File ""{src}\silent_script.ps1"""; WorkingDir: {src}; Flags: runhidden
+Filename: "powershell.exe"; Parameters: "-ExecutionPolicy Bypass -File ""{tmp}\silent_script.ps1"""; WorkingDir: {tmp}; Flags: runhidden
 
 [UninstallRun]
 Filename: "{app}\pGina.InstallUtil.exe"; Parameters: "post-uninstall"; StatusMsg: "Removing service and CP/GINA..."; WorkingDir: "{app}"; Flags: runhidden
